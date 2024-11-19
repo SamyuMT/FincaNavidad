@@ -1,0 +1,1632 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    align-items: center; /* Centra verticalmente */
+
+  }
+
+  .video-container {
+    position: relative; /* Para posicionar elementos internos de manera absoluta */
+    background-image: url('../images/video.png');
+    background-size:inherit; /* Ajusta la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+
+    width: 100%; /* Se adapta al ancho de la pantalla */
+    height: 700px;
+    margin: 0; /* Centrado horizontal */
+    overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
+
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para distribuir los elementos */
+  }
+}
+  
+  /* Navbar Styles */
+  .navbar {
+    width: 100%;
+    height: 56px;
+    padding: 0 208px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(14.8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 72px;
+  }
+  
+  .text {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .bottom {
+    background: #FF0368;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .bottom:hover {
+    background: #AB0D4C;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+  }
+  
+
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0 16px;
+    }
+
+    .menu-toggle {
+      display: inline-block;
+    }
+
+    .navbar .items {
+      display: none; /* Oculta las opciones normales */
+    }
+  
+  
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      gap: 16px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      position: absolute;
+      z-index: 100; /* Coloca el menú sobre el contenido */
+      top: 56px;
+      right: 0;
+      width: 100%;
+      max-width: 300px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+
+
+    .mobile-menu.active {
+      display: flex; /* Mostrar el menú al activarlo */
+    }
+  
+    .text {
+      color: rgb(0, 0, 0); /* Cambiar el color del texto para que sea legible */
+      margin: 10px 0;
+      cursor: pointer;
+    }
+  }
+
+  
+
+  /* Mobile Styles */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  /* Frame Styles */
+  .Frame2 {
+    position: relative;
+    width: 890px; /* Ancho fijo */
+    height: 503px; /* Alto fijo */
+    top: 30px; /* Separación desde el borde superior */
+    left: 50px; /* Separación desde el borde izquierdo */
+    padding: 32px;
+    background: linear-gradient(0deg, #05001D 0%, #05001D 100%);
+    box-shadow: 8px 16px 11.8px rgba(0, 0, 0, 0.25);
+    border-radius: 48px;
+    overflow: hidden;
+
+    /* Imagen de fondo */
+    background-image: url('../images/Frame2.png');
+    background-size: cover; /* Ajustar imagen dentro del contenedor */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repeticiones */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+.GranFinca, .NavideA2024 {
+    align-self: stretch;
+    font-size: 75px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    color: white;
+    word-wrap: break-word;
+}
+
+.NavideA2024 {
+    color: #FF0368;
+}
+
+.Bienvenida1 {
+    align-self: stretch;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: white;
+    word-wrap: break-word;
+}
+
+.Frame3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.Lineas {
+    padding: 8px 24px;
+    border-radius: 16px;
+    border: 2px #FF0368 dotted;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.Bottom1 {
+  padding: 10px 20px;
+  border-radius: 24px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.red-button {
+    background: #FF0368;
+    color: white;
+}
+
+.white-button {
+    background: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+  .Frame2 {
+    width: 90%; /* Reducir el ancho */
+    height: 100%; /* Permitir que crezca dinámicamente */
+    top: 0px; /* Separación desde el borde superior */
+    left: 0px; /* Separación desde el borde izquierdo */
+    padding: 16px; /* Reducir el padding */
+    margin: 16px auto; /* Centrar horizontalmente */
+    border-radius: 16px; /* Redondeo más suave */
+    gap: 8px;
+  }
+
+  .GranFinca, .NavideA2024 {
+    font-size: 36px; /* Reducir el tamaño de la fuente */
+    text-align: center;
+  }
+
+  .Bienvenida1 {
+    font-size: 14px; /* Reducir el tamaño del texto */
+    text-align: center; /* Centrar el texto */
+  }
+
+  .Frame3 {
+    flex-direction: column; /* Colocar los botones en columna */
+    gap: 12px; /* Separación entre botones */
+    align-items: center; /* Centrar los botones */
+  }
+
+  .Lineas {
+    font-size: 14px; /* Reducir el tamaño de texto */
+  }
+}
+
+.SobreDe {
+  width: 100%;
+  padding: 40px 56px;
+  background:  #FFFF 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Direccion horizontal */
+  gap: 104px; /* Espaciado entre los elementos */
+
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  text-align: center;
+  color: white;
+  padding: 32px;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 32px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.feature-item {
+  max-width: 300px;
+  text-align: left;
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.feature-item p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+
+.Informacion2 {
+  width: auto;
+  height: auto;
+  background: rgba(200.81, 142.24, 142.24, 0);
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Añadido para adaptarse al móvil */
+  gap: 16px;
+
+}
+
+.Imagenes {
+  width: 576px;
+  align-self: stretch;
+  padding: 21px 30px;
+  display: flex;
+  flex-direction: row; /* Apilar los elementos verticalmente */
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Asegura que las imágenes se apilen en pantallas pequeñas */
+
+}
+
+.Izquierda {
+  width: 238px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Alineación de las imágenes en móviles */
+  gap: 21px;
+}
+
+.img1, .img2, .img3 {
+  position: relative;
+  background: linear-gradient(0deg, white 0%, white 100%);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+
+.img1 {
+  width: 100%; /* Las imágenes ocupan el 100% del ancho disponible */
+  height: auto; /* Mantiene la relación de aspecto */
+}
+
+.img2 {
+  width: 100%; 
+  height: auto;
+}
+
+.img3 {
+  width: 100%; 
+  height: auto;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Derecha {
+  width: 248px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.img4,
+.img5 {
+  position: relative;
+  background: linear-gradient(0deg, white 0%, white 100%);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+
+.img4 {
+  width: 217px;
+  height: 239px;
+}
+
+.img5 {
+  width: 248px;
+  height: 221px;
+}
+
+.Frame5 {
+  width: 584px;
+  align-self: stretch;
+  padding: 32px 24px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.Frame9 {
+  height: 40%; /* Se ajusta al contenido */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  flex-wrap: wrap; /* Asegura que las imágenes se apilen en pantallas pequeñas */
+
+}
+
+.BienvenidoANuestraFincaNavideA {
+  font-size: 50px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  color: #223645;
+  word-wrap: break-word;
+}
+
+.highlight {
+  color: #FF0368;
+}
+
+.Informacion3 {
+  width: 429px;
+  color: #505050;
+  font-size: 14px; /* Ajuste de tamaño de texto */
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.Frame8 {
+  align-self: stretch;
+  height: auto; /* Se ajusta al contenido */
+  padding: 16px;
+  background: #FFF8F8;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.contenedorInfo {
+  width: 100%; /* Asegura que se ajuste al 100% */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row; /* Apilar en dispositivos móviles */
+
+  
+}
+
+.Vector {
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/Vector.svg');
+  background-size: cover; /* Ajustar imagen dentro del contenedor */
+
+
+}
+
+.info{
+  flex: 1 1 0;
+  color: #54595F;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Medios para dispositivos móviles */
+@media (max-width: 768px) {
+
+  .SobreDe{
+    padding: 16px;
+    gap: 32px;
+
+  }
+  .Informacion2 {
+    height: auto;
+    flex-direction: column; /* Apilar los elementos verticalmente */
+    padding: 0px;
+  }
+
+  .Imagenes {
+    padding: 0%;
+    width:100%;                                 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Izquierda {
+    width: 60%;
+    align-items: center;
+  }
+  .Derecha{
+    display: none;
+  }
+
+  .img1,
+  .img2,
+  .img3 {
+    width: 90%; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+  }
+
+  .img4,
+  .img5{
+    width: 90%; /* Ajusta el tamaño de las imágenes */
+    height: 90%;
+  }
+
+  .Frame5 {
+    width: 100%; /* Reducir el ancho */
+    padding: 0;
+    height: auto; /* Permitir que crezca dinámicamente */
+    top: 0px; /* Separación desde el borde superior */
+    left: 0px; /* Separación desde el borde izquierdo */
+  }
+
+  .Frame9 {
+    width: 100%; /* Reducir el ancho */
+    height: auto; /* Permitir que crezca dinámicamente */
+    top: 0px; /* Separación desde el borde superior */
+    left: 0px; /* Separación desde el borde izquierdo */
+  }
+
+  .BienvenidoANuestraFincaNavideA {
+    font-size: 30px;
+    text-align: center; /* Centra el texto horizontalmente */
+
+    
+  }
+
+  .Informacion3{
+    width: 100%;
+    text-align: justify; /* Centra el texto horizontalmente */
+    height: auto;
+  }
+  .Frame8 {
+    width: 100%;
+    padding: 16px;
+    gap: 10px;
+  }
+  .Vector {
+    height: 16px;
+    width: 16px;
+  }
+
+  .contenedorInfo {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .info {
+    font-size: 14px;
+  }
+}
+
+.Cuentaregresiva {
+  width: 100%;
+  height: 100%;
+  background-color: #f7eaea;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 24px;
+}
+
+.Buyticked1 {
+  width:40%;
+  padding: 16px 27px;
+  background: #FFF8F8;
+  border-radius: 32px;
+  text-align: center;
+}
+
+.NuestroEventoIniciaEn {
+  color: #223645;
+  font-size: 28px;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  font-weight: 900;
+  word-wrap: break-word;
+}
+
+.Contador {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Conta {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 10px 8px;
+  border-right: 1px solid #D6D6D6;
+}
+
+.Text {
+  text-align: center;
+}
+
+.count {
+  color: #223645;
+  font-size: 32px;
+  font-family: Inter, sans-serif ;
+  font-weight: 700;
+}
+
+.bottomL {
+  width: 216px;
+  height: 100%;
+  background: #FF0368;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 16px;
+  transition: background 0.3s ease;
+}
+
+.bottomL:hover {
+  background: #AB0D4C;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .Buyticked1{
+    display: none;
+  }
+
+
+  .count {
+    font-size: 24px;
+  }
+
+  .Text {
+    font-size: 12px;
+  }
+
+  .bottomL {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Cuentaregresiva {
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .Contador {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .Conta {
+    gap: 4px;
+  }
+
+  .count {
+    font-size: 20px;
+  }
+
+  .Text {
+    font-size: 10px;
+  }
+
+  .bottomL {
+    font-size: 16px;
+    padding: 8px 8px;
+  }
+}
+
+/* Tips scena*/
+
+.Infotips {
+  width: 80%;
+  height: 100%;
+  padding: 32px;
+  position: relative;
+  background: white;
+  box-shadow: 0px 4px 18.2px 8px rgba(0, 0, 0, 0.10);
+  border-radius: 40px;
+  overflow: hidden;
+  flex-direction: row; /* Direccion horizontal */
+  justify-content: space-between; /* Espacio entre columnas */
+  align-items: flex-start; /* Alinear elementos al inicio verticalmente */
+  display: flex; /* Alinea en fila */
+  gap: 32px;
+}
+
+.IzquierdaTips {
+  width: 30%; /* Controla el espacio de la sección izquierda */
+  display: flex;
+  flex-direction: column; /* Mantiene elementos en columna */
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.PorQuIrALaFincaNavideA {
+  align-self: stretch;
+  font-size: 50px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  color: #223645;
+}
+
+.PorQuIrALaFincaNavideA span {
+  color: #FF0368;
+}
+
+.sep {
+  width: 350px;
+}
+.textoTipo {
+  width: 100%;
+  color: #505050;
+  font-size: 16px;
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.Derechatips {
+  height: 70%;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+
+.Tip {
+  font-family: poppins, sans-serif;
+  width: 277px;
+  height: 108px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+}
+
+.Interno {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  display: inline-flex;
+}
+
+.Ico1 {
+  width: 70px;
+  height: 70px;
+  background: #FFF8F8;
+  background-image: url('../images/tip1.svg');
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* Evitar repeticiones */
+  border-radius: 40px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.Ico2 {
+  width: 70px;
+  height: 70px;
+  background: #FFF8F8;
+  background-image: url('../images/tip2.svg');
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* Evitar repeticiones */
+  border-radius: 40px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.Ico3 {
+  width: 70px;
+  height: 70px;
+  background: #FFF8F8;
+  background-image: url('../images/tip3.svg');
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* Evitar repeticiones */
+  border-radius: 40px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.Ico4 {
+  width: 70px;
+  height: 70px;
+  background: #FFF8F8;
+  background-image: url('../images/tip4.svg');
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* Evitar repeticiones */
+  border-radius: 40px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.Checklist {
+  width: 41.62px;
+  height: 30.42px;
+  background: #223645;
+  position: absolute;
+  left: 3.19px;
+  top: 7.48px;
+}
+
+.DryCleaning {
+  width: 37.69px;
+  height: 41.73px;
+  background: black;
+  position: absolute;
+  left: 5.18px;
+  top: 3.13px;
+}
+
+.SportsAndOutdoors {
+  width: 41.73px;
+  height: 41.73px;
+  background: black;
+  position: absolute;
+  left: 3.14px;
+  top: 3.13px;
+}
+
+
+.Textotip {
+  font-family: poppins, sans-serif;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1px;
+  display: inline-flex;
+}
+
+.TipDeFinca {
+  font-family: poppins, sans-serif;
+  align-self: stretch;
+  color: black;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 600;
+}
+
+.LoremIpsumDolorSitAmetConsectetur {
+  width: 155px;
+  color: black;
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 300;
+  word-wrap: break-word;
+  text-align:left;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  .Infotips {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 16px;
+
+
+  }
+
+  .Derechatips{
+    flex-direction: column;
+  
+  }
+
+  .PorQuIrALaFincaNavideA{
+    font-size: 32px;
+    padding-bottom: 16px;
+  }
+
+}
+
+
+/* Agenda*/
+
+
+
+.AgendaContainer {
+  width: 100%;
+  height: 100%;
+  padding: 64px 8px; /* Espaciado superior/inferior y lateral */
+  background: #FFF8F8; /* Color de fondo */
+  display: flex; /* Flexbox para centrar */
+  flex-direction: column; /* Dirección vertical */
+  justify-content: center; /* Centrado vertical */
+  align-items: center; /* Centrado horizontal */
+  gap: 16px; /* Espaciado entre elementos hijos */
+}
+
+.AgendaText {
+  text-align: center; /* Centrar texto dentro del contenedor */
+}
+
+.PinkText {
+  color: #FF0368; /* Color rosado */
+  font-size: 75px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word; /* Asegurar que el texto se ajuste si es necesario */
+}
+
+.DarkText {
+  color: #223645; /* Color oscuro */
+  font-size: 75px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word; /* Asegurar que el texto se ajuste si es necesario */
+}
+
+.EventContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden; /* Ocultar contenido fuera del borde */
+  display: flex; /* Usar flexbox para organizar horizontalmente */
+  justify-content: flex-start; /* Alinear contenido al inicio */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.TimeBlock {
+  width: 366px;
+  align-self: stretch; /* Extender el contenedor */
+  padding: 40px 48px;
+  background: #FF0368; /* Fondo rosado */
+  display: flex;
+  flex-direction: column; /* Elementos en columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  gap: 16px; /* Espaciado entre elementos */
+}
+
+.TimeBlock1 {
+  width: 366px;
+  align-self: stretch; /* Extender el contenedor */
+  padding: 40px 48px;
+  background: #223645; /* Fondo rosado */
+  display: flex;
+  flex-direction: column; /* Elementos en columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  gap: 16px; /* Espaciado entre elementos */
+}
+
+.TimeText {
+  color: white;
+  font-size: 22px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  word-wrap: break-word; /* Ajustar texto si es necesario */
+}
+
+.TitleText {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.DetailBlock {
+  width: 954px;
+  align-self: stretch;
+  padding: 8px 88px;
+  background: white;
+  display: flex;
+  justify-content: center; /* Centrar contenido horizontalmente */
+  align-items: center; /* Centrar contenido verticalmente */
+}
+
+.DetailContent {
+  flex: 1 1 0; /* Permitir flexibilidad al contenido */
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column; /* Contenido en columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  gap: 8px; /* Espaciado entre elementos */
+}
+
+.DetailTitle {
+  align-self: stretch; /* Ajustar al ancho disponible */
+  color: black;
+  font-size: 40px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.DetailDescription {
+  align-self: stretch;
+  color: black;
+  font-size: 24px;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+.DetailStatus {
+  align-self: stretch;
+  color: black;
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.Cronograma{
+  height: 100%;
+  padding: 104px 8px; /* Espaciado superior/inferior y lateral */
+  background: #FFF8F8; /* Color de fondo */
+  display: flex; /* Flexbox para centrar */
+  flex-direction: column; /* Dirección vertical */
+
+  gap: 16px;
+}
+
+
+@media (max-width: 768px) {
+
+
+  .PinkText{
+    font-size: 48px;
+  }
+  .DarkText{
+    font-size: 48px;
+  }
+
+  .DetailBlock{
+    display: none;
+  }
+
+  .TimeBlock {
+    width: 100%;
+    height: 100%;
+    padding: 24px 24px;
+  }
+
+  .TimeBlock1{
+    width: 100%;
+    height: 100%;
+    padding: 24px 24px;
+
+  }
+  .AgendaContainer{
+    padding: 32px 8px;
+    gap: 16px
+  }
+  .Cronograma{
+    padding: 16px 8px;
+  }
+  .TimeText{
+    font-size: 16px;
+  }
+
+  .TitleText{
+    font-size: 24px;
+  }
+}
+
+.buy-tikect{
+  background-image: url('../images/buy-tikect.png');
+  background-size:inherit; /* Ajusta la imagen para cubrir el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evitar que la imagen se repita */
+  flex-direction: row; /* Dirección vertical */
+  width: 100%; /* Se adapta al ancho de la pantalla */
+  height: auto;
+  overflow: hidden;
+  flex-direction: row; /* Direccion horizontal */
+  justify-content: space-between; /* Espacio entre columnas */
+  align-items: flex-start; /* Alinear elementos al inicio verticalmente */
+  display: flex; /* Alinea en fila */
+  gap: 32px;
+  padding: 32px 72px;
+
+}
+
+.InfoTicketCompra{
+  position: relative; /* Si es necesario para elementos internos */
+  display: flex; /* Activar Flexbox */
+  flex-direction: column; /* Asegura que el contenido se apile */
+
+  height: auto;
+  width: 50%;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  margin: 120px; /* Asegura que el contenedor esté centrado en su contenedor padre */
+  text-align: center; /* Centrar texto si es necesario */
+  gap: 24px;
+
+
+}
+
+
+.ticket-text {
+  width: auto;
+  height: auto;
+  flex-direction: row; /* Asegura que el contenido se apile */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  padding: 16px 16px;
+  text-align: center; /* Alinear el texto dentro del contenedor */
+  gap: 16px;
+}
+
+.text-white {
+  color: white;
+  font-size: 75px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.text-black {
+  color: black;
+  font-size: 75px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.text-highlight {
+  color: #FF0368; /* Color destacado */
+  font-size: 75px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.event-container {
+  width: auto;
+  height: 100%;
+  padding: 9px 43px; /* Arriba/Abajo: 9px, Izquierda/Derecha: 43px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Espaciado entre elementos internos */
+}
+
+.event-text {
+  color: white;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.countdown-container {
+  width: auto;
+  height: 100%;
+  padding: 5px 16px; /* Reducir padding en pantallas pequeñas */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  justify-content: space-between; /* Espacio entre columnas */
+  align-items: center;
+  gap: 48px;
+}
+
+.countdown-box {
+  height: 104px;
+  width: 116px;
+  padding: 8px 16px;
+  background: rgba(255, 3, 104, 0.60);
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-number {
+  height: 64px;
+  padding: 8px;
+  color: white;
+  font-size: 40px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.countdown-label {
+  padding: 8px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  padding: 104px 24px;
+  background: white;
+  box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 48px;
+  border: 8px #FF0368 solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  color: #FF0368;
+}
+
+.amount {
+  font-size: 50px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.per-person {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+
+.description {
+  color: #223645;
+  font-size: 14px;
+  text-align: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 16px;
+}
+
+.circle {
+  width: 21.6px;
+  height: 21.6px;
+  background-image: url('../images/Vector.svg');
+  background-size: cover; /* Ajustar imagen dentro del contenedor */
+
+  border-radius: 50%;
+}
+
+.item span {
+  color: #223645;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cta-button {
+  height: auto;
+  width: auto;
+  font-size: 16px; /* Tamaño de fuente base */
+  padding: 16px 26px; /* Padding base */
+  background: #FF0368;
+  border: none;
+  border-radius: 24px;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #AB0D4C;
+}
+
+
+@media (max-width: 768px) {
+  .buy-tikect {
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .InfoTicketCompra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    width: 90%;
+    max-width: 600px; /* Limita el tamaño máximo */
+    margin: 0 auto; /* Centrado automático */
+    text-align: center;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .ticket-text {
+    gap: 8px;
+  }
+
+  .card {
+    padding: 24px;
+    gap: 16px;
+    width: auto;
+    height: auto;
+
+
+  }
+
+  .cta-button {
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    padding: 16px 26px;
+  }
+
+  .countdown-container {
+    flex-direction: row; /* Cambiar a columna */
+    justify-content: center; /* Centrar elementos */
+    align-items: center; /* Centrar elementos verticalmente */
+    gap: 8px; /* Reducir espacio entre elementos */
+  }
+
+  .countdown-box {
+    height: auto; /* Más compacto */
+    width: 80px; /* Más compacto */
+    padding: 4px 8px; /* Reducir padding aún más */
+    border-radius: 12px; /* Ajustar bordes */
+  }
+
+  .countdown-number {
+    font-size: 24px; /* Ajustar tamaño de fuente */
+    width: auto;
+    height: auto;
+  }
+
+  .countdown-label {
+    font-size: 12px; /* Reducir tamaño de fuente */
+  }
+
+  .amount {
+    font-size: 36px;
+    font-weight: 700px;
+    margin-right: 8px;
+  }
+
+  
+}
+
+
+@media (max-width: 480px) {
+  .buy-tikect {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .InfoTicketCompra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    width: 100%;
+    max-width: 600px; /* Limita el tamaño máximo */
+    margin: 0 auto; /* Centrado automático */
+    text-align: center;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .card {
+    width: auto;
+    height: auto;
+    padding: 16px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding-left: 96px;
+  padding-right: 96px;
+  padding-top: 89px;
+  padding-bottom: 89px;
+  background: #FFF8F8;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.Perfil {
+  display: flex;
+  flex-direction: column; /* Organiza en columnas */
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px; /* Espacio entre los elementos dentro de Perfil */
+  padding: 24px;
+  margin: 72px;
+}
+
+.title {
+  text-align: center;
+  align-self: stretch;
+  margin-bottom: 32px; /* Separa el título de los perfiles */
+}
+
+.title-first {
+  color: #FF0368;
+  font-size: 96px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.title-second {
+  color: #223645;
+  font-size: 96px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+/* Profile title text */
+.profile-title {
+  align-self: stretch;
+  text-align: center;
+}
+
+.profile-main-text {
+  color: #223645;
+  font-size: 48px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+}
+
+.profile-highlighted-text {
+  color: #FF0368;
+  font-size: 48px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+}
+
+.Perfiles {
+  display: flex;
+  flex-direction: row; /* Elementos en fila */
+  justify-content: space-between;
+  align-items: flex-start; 
+  gap: 32px;
+  padding: 32px 72px;
+  width: 100%;
+  height: auto; /* Ajusta la altura al contenido */
+}
+
+.profile-container, .map {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos dentro de cada contenedor en columna */
+  align-items: center;
+  gap: 16px; /* Espacio entre los elementos dentro de los contenedores */
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+}
+
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .Perfil{
+    margin: 16px  ;
+  }
+  .container {
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
+
+  .title-first, .title-second {
+      font-size: 48px; /* Reduce el tamaño de las fuentes en móviles */
+  }
+
+  .Perfiles {
+      flex-direction: column; /* Cambia la disposición a columnas en pantallas más pequeñas */
+      gap: 16px;
+      padding: 16px;
+  }
+
+  .profile-container, .map {
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .profile-title {
+      font-size: 36px; /* Ajusta el tamaño de texto para dispositivos pequeños */
+  }
+
+  .profile-main-text, .profile-highlighted-text {
+      font-size: 32px; /* Reducir el tamaño del texto */
+  }
+
+  .map iframe {
+      max-width: 100%; /* Asegura que el mapa sea responsivo */
+  }
+}
+
+@media (max-width: 480px) {
+  .title-first, .title-second {
+      font-size: 32px; /* Aún más pequeño en pantallas extra pequeñas */
+  }
+
+  .profile-main-text, .profile-highlighted-text {
+      font-size: 28px; /* Ajuste del texto para pantallas muy pequeñas */
+  }
+
+  .map iframe {
+      height: 250px; /* Ajusta el tamaño del iframe del mapa */
+  }
+}

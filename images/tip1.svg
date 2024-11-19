@@ -1,0 +1,10 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component 2">
+<mask id="mask0_127_518" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48">
+<rect id="Bounding box" width="48" height="48" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_127_518)">
+<path id="checklist" d="M10.9055 37.9055L3.18799 30.2L5.90549 27.4945L10.9055 32.4445L19.8555 23.4825L22.561 26.25L10.9055 37.9055ZM10.9055 21.9055L3.18799 14.2L5.90549 11.4945L10.9055 16.4445L19.8555 7.48254L22.561 10.25L10.9055 21.9055ZM25.8695 33.9075V30.0425H44.812V33.9075H25.8695ZM25.8695 17.9075V14.0425H44.812V17.9075H25.8695Z" fill="#223645"/>
+</g>
+</g>
+</svg>

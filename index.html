@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <title>Landing Page</title>
+</head>
+<body>
+    <div id="hogar" class="video-container">
+    <!-- Navbar -->
+        <nav class="navbar">
+            <div class="items">
+                <a href="#hogar" class="text">HOGAR</a>
+                <a href="#sobre-el-evento" class="text">SOBRE EL EVENTO</a>
+                <a href="#agenda" class="text">AGENDA</a>
+                <a href="#ubicacion" class="text">UBICACIÓN</a>
+            </div>
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=RWuvFsUAo0udTIv6FuQ2A3GnV0NMP2hBg5N-vbJNX4FUOFpGUUwwNk9NR0hXM1Y3SEVSU0pLR1ozVS4u" class="bottom">COMPRA ENTRADAS</a> 
+            <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        </nav>
+        <div class="mobile-menu">
+            <a href="#hogar" class="text">HOGAR</a>
+            <a href="#sobre-el-evento" class="text">SOBRE EL EVENTO</a>
+            <a href="#agenda" class="text">AGENDA</a>
+            <a href="#ubicacion" class="text">UBICACIÓN</a>
+        </div>
+
+        <!-- Frame 2 -->
+        <div class="Frame2">
+            <div class="GranFinca">GRAN FINCA</div>
+            <div class="NavideA2024">NAVIDEÑA 2024</div>
+            <div class="Bienvenida1">
+                ¡Bienvenidos a la Finca Navideña: un lugar mágico para comenzar la Navidad con aventura y alegría!<br/><br/>
+                ¿Listo para sumergirte en el verdadero espíritu navideño? Te invitamos a ser parte de una experiencia única, donde las risas, la diversión y la magia de la Navidad se unen para crear recuerdos inolvidables. Únete a nuestras Olimpiadas Navideñas en equipo, revive la emoción de la infancia y despide el año rodeado de nuevas amistades y tradiciones.
+            </div>
+            <div class="Frame3">
+                <div class="Lineas">
+                    <div class="Fecha">30 Nov - 1 Dic de 2024 @Colombia Valle del cauca</div>
+                </div>
+                <div class="Bottom1 red-button" onclick="showSchedule()">VER HORARIOS</div>
+                <div class="Bottom1 white-button" onclick="moreInfo()">MÁS INFORMACIÓN</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Cuentaregresiva">
+        <div class="Buyticked1">
+          <div class="NuestroEventoIniciaEn">Nuestro<br/>evento inicia en:</div>
+        </div>
+        <div class="Contador">
+          <div class="Conta">
+            <div class="Text">
+              <div id="days" class="count">0</div>
+              <div class="Text">DÍAS</div>
+            </div>
+          </div>
+          <div class="Conta">
+            <div class="Text">
+              <div id="hours" class="count">0</div>
+              <div class="Text">HORAS</div>
+            </div>
+          </div>
+          <div class="Conta">
+            <div class="Text">
+              <div id="minutes" class="count">0</div>
+              <div class="Text">MINUTOS</div>
+            </div>
+          </div>
+          <div class="Conta">
+            <div class="Text">
+              <div id="seconds" class="count">0</div>
+              <div class="Text">SEGUNDOS</div>
+            </div>
+          </div>
+        </div>
+        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=RWuvFsUAo0udTIv6FuQ2A3GnV0NMP2hBg5N-vbJNX4FUOFpGUUwwNk9NR0hXM1Y3SEVSU0pLR1ozVS4u" class="bottomL">¡RESERVA AHORA!</a>
+        </div>
+ 
+
+    <div  id="sobre-el-evento" class="SobreDe">
+
+        <div class="Informacion2">
+            <div class="Imagenes">
+                <div class="Izquierda">
+                    <img class="img1" src="https://via.placeholder.com/183x125" />
+                    <img class="img2" src="https://via.placeholder.com/238x149" />
+                    <img class="img3" src="https://via.placeholder.com/170x132" />
+                </div>
+                <div class="Derecha">
+                    <img class="img4" src="https://via.placeholder.com/217x239" />
+                    <img class="img5" src="https://via.placeholder.com/248x221" />
+                </div>
+            </div>
+            <div class="Frame5">
+                <div class="Frame9">
+                    <div class="BienvenidoANuestraFincaNavideA">
+                        <span>Bienvenido a Nuestra </span><span class="highlight">Finca Navideña</span>
+                    </div>
+                    <div class="Informacion3">
+                        Revive la magia de la Navidad y descubre lo que realmente significa sentirse como un niño nuevamente.
+                    </div>
+                </div>
+                <div class="Frame8">
+                    <div class="contenedorInfo">
+                        <div class="Vector"></div>
+                        <div class="info">Un Viaje de Regreso a la Magia de la Infancia</div>
+                    </div> 
+                    <div class="contenedorInfo">
+                        <div class="Vector"></div>
+                        <div class="info">Olimpiadas Navideñas en Equipo</div>
+                    </div> 
+                    <div class="contenedorInfo">
+                        <div class="Vector"></div>
+                        <div class="info">Desconéctate y Vive la Navidad en la Naturaleza</div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="Infotips">
+            <div class="Izquierdatips">
+                <div class="PorQuIrALaFincaNavideA">
+                    <span>¿Por qué ir a la </span><span>Finca Navideña?</span>
+                </div>
+                <div class="textoTipo">
+                    Es espacio diseñado para relajarte y divertirte al máximo. Participa en nuestras actividades llenas de emoción, desde juegos como billar, fútbol y básquet, hasta nuestras esperadas Olimpiadas Navideñas, cargadas de sorpresas y momentos inolvidables.
+                </div>
+            </div>
+            <div class="Derechatips">
+            <div class="sep"> 
+                <div class="Tip">
+                    <div class="Interno">
+                        <div class="Ico1">
+                        </div>
+                        <div class="Textotip">
+                            <div class="TipDeFinca">LLEVA</div>
+                            <div class="LoremIpsumDolorSitAmetConsectetur">Toallas, Cobijas, Jabón, y Papel Higiénico.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Tip">
+                    <div class="Interno">
+                        <div class="Ico2">
+                        </div>
+                        <div class="Textotip">
+                            <div class="TipDeFinca">ROPA</div>
+                            <div class="LoremIpsumDolorSitAmetConsectetur">Lleva ropa cómoda, para el frio y para bañar.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sep">
+                <div class="Tip">
+                    <div class="Interno">
+                        <div class="Ico3">
+                        </div>
+                        <div class="Textotip">
+                            <div class="TipDeFinca">JUEGOS</div>
+                            <div class="LoremIpsumDolorSitAmetConsectetur">Necesitamos balones de futbol y basket</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Tip">
+                    <div class="Interno">
+                        <div class="Ico4">
+                            <div class="Component2">
+                                <div class="BoundingBox"></div>
+                                <div class="WbIncandescent"></div>
+                            </div>
+                        </div>
+                        <div class="Textotip">
+                            <div class="TipDeFinca">MENTE ABIERTA</div>
+                            <div class="LoremIpsumDolorSitAmetConsectetur">Seis grados de separación, vamos a conocernos y compartir</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="agenda" class="AgendaContainer">
+        <div class="AgendaText">
+            <span class="PinkText">AGENDA DE </span>
+            <span class="DarkText">LA FINCA</span>
+        </div>
+        <div class="Cronograma">
+            <div class="EventContainer">
+                <div class="TimeBlock">
+                    <div class="TimeText">2:00 PM - 4:00 PM</div>
+                    <div class="TitleText">Llegada y Recepción</div>
+                </div>
+                <div class="DetailBlock">
+                    <div class="DetailContent">
+                        <div class="DetailTitle">Llegada y Recepción</div>
+                        <div class="DetailDescription">
+                            Recibimos a los asistentes con un ambiente acogedor y festivo. Será un espacio para acomodarse, conocer la finca y prepararse para las actividades que nos esperan.
+                        </div>
+                        <div class="DetailStatus">Por definir</div>
+                    </div>
+                </div>
+            </div>
+            <div class="EventContainer">
+                <div class="TimeBlock1">
+                    <div class="TimeText">4:00 PM - 5:00 PM</div>
+                    <div class="TitleText">Actividades</div>
+                </div>
+                <div class="DetailBlock">
+                    <div class="DetailContent">
+                        <div class="DetailTitle">Actividades</div>
+                        <div class="DetailDescription">
+                            Disfruta de un momento de esparcimiento con opciones para todos: juega fútbol, básquet, o billar, relájate en la piscina o participa en dinámicas de integración para empezar a conocernos mejor.
+                        </div>
+                        <div class="DetailStatus">Por definir</div>
+                    </div>
+                </div>
+            </div>
+            <div class="EventContainer">
+                <div class="TimeBlock">
+                    <div class="TimeText">5:00 PM - 8:00 PM</div>
+                    <div class="TitleText">Asado e Integración</div>
+                </div>
+                <div class="DetailBlock">
+                    <div class="DetailContent">
+                        <div class="DetailTitle">Asado e Integración</div>
+                        <div class="DetailDescription">
+                            Iniciaremos con un delicioso asado en un ambiente relajado. Durante este tiempo, disfrutaremos de la cena mientras compartimos anécdotas, risas y conversaciones diseñadas para fortalecer los lazos entre todos los asistentes.
+                        </div>
+                        <div class="DetailStatus">Por definir</div>
+                    </div>
+                </div>
+            </div>
+            <div class="EventContainer">
+                <div class="TimeBlock1">
+                    <div class="TimeText">8:00 PM - 12:00 AM</div>
+                    <div class="TitleText">Olimpiadas Navideñas</div>
+                </div>
+                <div class="DetailBlock">
+                    <div class="DetailContent">
+                        <div class="DetailTitle">Olimpiadas Navideñas</div>
+                        <div class="DetailDescription">
+                            Prepárate para una noche llena de emoción y espíritu festivo con nuestras Olimpiadas Navideñas. Formaremos equipos para competir en actividades únicas y divertidas con un toque especial navideño. ¡Sorpresas aseguradas!
+                        </div>
+                        <div class="DetailStatus">Por definir</div>
+                    </div>
+                </div>
+            </div>
+            <div class="EventContainer">
+                <div class="TimeBlock">
+                    <div class="TimeText">12:00 AM - 3:00 AM</div>
+                    <div class="TitleText">Juegos de Integración y Piscina</div>
+                </div>
+                <div class="DetailBlock">
+                    <div class="DetailContent">
+                        <div class="DetailTitle">Juegos de Integración y Piscina</div>
+                        <div class="DetailDescription">
+                            Con un ambiente más relajado, disfrutaremos de juegos de integración acompañados de bebidas (incluyendo opciones con alcohol para quienes deseen). Además, la piscina estará abierta para quienes quieran continuar la diversión bajo las estrellas.
+                        </div>
+                        <div class="DetailStatus">Por definir</div>
+                    </div>
+                </div>
+            </div>
+            <div class="EventContainer">
+                <div class="TimeBlock1">
+                    <div class="TimeText">3:00 AM - 9:00 AM</div>
+                    <div class="TitleText">Descanso y Desayuno</div>
+                </div>
+                <div class="DetailBlock">
+                    <div class="DetailContent">
+                        <div class="DetailTitle">Descanso y Desayuno</div>
+                        <div class="DetailDescription">
+                            Un desayuno reconfortante para iniciar el día con energía seguido de un tiempo tranquilo para descansar, despertar con calma y reponer fuerzas después de la noche de actividades.
+                            </div>
+                        <div class="DetailStatus">Por definir</div>
+                    </div>
+                </div>
+            </div>
+            <div class="EventContainer">
+                <div class="TimeBlock">
+                    <div class="TimeText">9:00 AM - 12:00 PM</div>
+                    <div class="TitleText">Relajación</div>
+                </div>
+                <div class="DetailBlock">
+                    <div class="DetailContent">
+                        <div class="DetailTitle">Relajación</div>
+                        <div class="DetailDescription">
+                            Disfruta de la mañana libre para relajarte, disfrutar de la finca y conversar con los demás asistentes. Un espacio perfecto para recargar energías antes del cierre.
+                        </div>
+                        <div class="DetailStatus">Por definir</div>
+                    </div>
+                </div>
+            </div>
+            <div class="EventContainer">
+                <div class="TimeBlock1">
+                    <div class="TimeText">12:00 PM - 2:00 PM</div>
+                    <div class="TitleText">Limpieza y Cierre</div>
+                </div>
+                <div class="DetailBlock">
+                    <div class="DetailContent">
+                        <div class="DetailTitle">Limpieza y Cierre</div>
+                        <div class="DetailDescription">
+                            En equipo, nos encargaremos de dejar la finca en orden. Es una oportunidad para cerrar el evento de manera colaborativa, dejando todo listo y despedirnos con buenos recuerdos.
+                            </div>
+                        <div class="DetailStatus">Por definir</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="buy-tikect">
+        <div class="InfoTicketCompra">
+            <div class="ticket-text">
+                <span class="text-white">Compra tu</span>
+                <span class="text-highlight">Ticket</span>
+            </div>
+            <div class="event-container">
+                <div class="event-text">30 Nov - 1 Dic de 2024 @Colombia Valle del cauca</div>
+            </div>
+            <div class="countdown-container">
+                <div class="countdown-box">
+                  <div class="countdown-content">
+                    <div id="days1" class="countdown-number">0</div>
+                    <div  class="countdown-label">DÍA</div>
+                  </div>
+                </div>
+                <div class="countdown-box">
+                  <div class="countdown-content">
+                    <div id="hours1" class="countdown-number">0</div>
+                    <div  class="countdown-label">HORAS</div>
+                  </div>
+                </div>
+                <div class="countdown-box">
+                  <div class="countdown-content">
+                    <div id="minutes1" class="countdown-number">0</div>
+                    <div class="countdown-label">MINUTOS</div>
+                  </div>
+                </div>
+                <div class="countdown-box">
+                  <div class="countdown-content">
+                    <div id="seconds1" class="countdown-number">0</div>
+                    <div  class="countdown-label">SEGUNDO</div>
+                  </div>
+                </div>
+            </div>
+              
+
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="header">
+                    <div class="price">
+                        <span class="amount">$ 100 k COP</span>
+                        <span class="per-person">/ Persona</span>
+                    </div>
+                    <p class="description">No te quedes sin vivir esta experiencia que no se repite</p>
+                </div>
+                <div class="details">
+                    <div class="item">
+                        <div class="circle"></div>
+                        <span>Estadia en la Finca</span>
+                    </div>
+                    <div class="item">
+                        <div class="circle"></div>
+                        <span>Asado, juegos sociales, sorpresas</span>
+                    </div>
+                    <div class="item">
+                        <div class="circle"></div>
+                        <span>Desayuno y Snacks</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=RWuvFsUAo0udTIv6FuQ2A3GnV0NMP2hBg5N-vbJNX4FUOFpGUUwwNk9NR0hXM1Y3SEVSU0pLR1ozVS4u" class="bottom">COMPRA ENTRADA</a>
+        </div>
+    </div>
+
+    <div id="ubicacion" class="Perfil">
+        <div class="title">
+            <span class="title-first">FINCA</span>
+            <span class="title-second">VILLA MAJU</span>
+        </div>
+        <div class="Perfiles">
+            <div class="profile-container">
+                <iframe width="320" height="440" src="https://www.instagram.com/p/BgR1FfZhFao/embed" frameborder="0"></iframe>
+                <div class="profile-title">
+                    <span class="profile-main-text">ORGANIZADOR </span><span class="profile-highlighted-text">DEL EVENTO</span>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.1563850743096!2d-76.61801692502702!3d3.55140199642282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30af1d0c4a6793%3A0x59062a57915a27a8!2sFinca%20villa%20maju%20km24!5e0!3m2!1ses!2sco!4v1732025710784!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="https://www.fincavillamaju.com/" class="bottom">VISITA LA WEB</a>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
